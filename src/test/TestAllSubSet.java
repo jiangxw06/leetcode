@@ -12,7 +12,7 @@ public class TestAllSubSet {
 	List<List<Integer>> result;
 	@Test
 	public void test() throws Exception{
-		int[] nums={10,1,2,7};
+		int[] nums={1,2,3};
 		result=new AllSubSet().printAllSubset(nums);
 	}
 	@After

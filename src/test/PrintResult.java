@@ -12,7 +12,7 @@ public class PrintResult {
 
 	private static String getString(Object obj) throws Exception {
 		if (obj instanceof Integer || obj instanceof Double || obj instanceof Boolean || obj instanceof Double
-				|| obj instanceof Character)
+				|| obj instanceof Character||obj instanceof String)
 			return obj.toString();
 		else if (obj.getClass().isArray()) {
 			int len = Array.getLength(obj);
@@ -37,6 +37,6 @@ public class PrintResult {
 			sb.append("]");
 			return sb.toString();
 		} else
-			throw new Exception("class not considered");
+			return obj.toString();
 	}
 }
